@@ -1,0 +1,37 @@
+@use "../mixins/media-query" as *;
+
+.tab {
+  padding: 1rem 0;
+  flex-basis: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+  letter-spacing: 1px;
+
+  @include mq(600px) {
+    font-size: 1rem;
+
+    @media (pointer: coarse) {
+      padding: 3rem 0;
+    }
+  }
+
+  @include mq(1600px) {
+    padding: 1rem 3rem;
+  }
+}
+
+.inner {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.caret-icon {
+  display: none;
+
+  @include mq(1600px) {
+    display: block;
+  }
+}

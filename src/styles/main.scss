@@ -1,0 +1,324 @@
+@use "mixins/media-query" as *;
+
+@use "utilities/colors";
+@use "utilities/flow";
+
+@use "fonts";
+@use "global";
+@use "typography";
+
+.background-images {
+  display: none;
+
+  @include mq(1600px) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    position: fixed;
+    top: -3rem;
+    bottom: -3rem;
+    left: -3rem;
+    right: -3rem;
+    z-index: -1;
+
+    .ksi-profile,
+    .all-over-the-place-cover {
+      transform: rotateZ(-3deg);
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+    .ksi-profile {
+      background-image: url("../images/ksi-profile.jpg");
+    }
+
+    .all-over-the-place-cover {
+      background-image: url("../images/all-over-the-place-cover.jpg");
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 200%;
+      height: 100%;
+      pointer-events: none;
+      background-color: var(--dark-800-95);
+    }
+  }
+}
+
+.page-wrapper {
+  background-color: var(--dark-900);
+
+  @include mq(1600px) {
+    background-color: transparent;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      background-color: var(--dark-800);
+    }
+  }
+}
+
+.home-page-wrapper {
+  .tour-page-content {
+    left: calc(-100% + 1.75rem);
+    width: calc(100% - 2.25rem);
+
+    @include mq(1600px) {
+      left: -50%;
+      width: calc(50% - 3rem);
+    }
+  }
+
+  .home-page-link {
+    right: 100%;
+
+    @include mq(1600px) {
+      pointer-events: none;
+      right: 50%;
+    }
+  }
+}
+
+.tour-page-wrapper {
+  .background-images {
+    left: calc(50% - 3rem);
+    right: calc(-50% - 3rem);
+  }
+
+  .home-page-content {
+    right: calc(-100% + 1.75rem);
+    position: relative;
+    user-select: none;
+    pointer-events: none;
+    border-top-left-radius: 0.75rem;
+    overflow: hidden;
+    opacity: 0.6;
+
+    @include mq(1600px) {
+      right: -50%;
+    }
+  }
+
+  .tour-page-content {
+    width: calc(100% - 2.25rem);
+    
+    @include mq(1600px) {
+      width: calc(50% - 3rem);
+    }
+  }
+
+  .home-page-link {
+    right: 0;
+  }
+
+  .tabs {
+    opacity: 0;
+    pointer-events: none;
+    right: -100%;
+    left: auto;
+
+    @include mq(1600px) {
+      right: auto;
+      left: 50%;
+    }
+  }
+}
+
+.tour-page-content {
+  position: fixed;
+  height: 100vh;
+  background-color: var(--dark-800);
+  border-top-right-radius: 0.75rem;
+
+  @include mq(1600px) {
+    background-color: transparent;
+    border-top-right-radius: 0;
+  }
+}
+
+.home-page-content {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto 1fr;
+  place-items: center;
+  background-color: var(--dark-800);
+
+  @include mq(600px) {
+    @media (pointer: coarse) {
+      grid-template-columns: 1fr 375px;
+    }
+  }
+
+  @include mq(1600px) {
+    background-color: transparent;
+    grid-template-columns: auto 1fr auto;
+  }
+
+  .album-logo {
+    grid-row: 1;
+    grid-column: 1 / -1;
+    margin-top: 1rem;
+
+    @include mq(768px) {
+      margin-top: 3rem;
+    }
+    
+    svg {
+      height: 55px;
+      width: 100%;
+
+      @include mq(660px) {
+        height: 89px;
+      }
+    }
+  }
+
+  .main-content {
+    --spacing: 1.5rem;
+
+    grid-row: 1 / -1;
+    grid-column: 1 / -1;
+    text-align: center;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+
+    h1 {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .pre-order {
+      font-size: 0.875rem;
+      letter-spacing: 1px;
+      
+      @include mq(660px) {
+        font-size: 1rem;
+      }
+    }
+  }
+
+  .music-services {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+    gap: 1rem;
+    max-width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+
+    @include mq(660px) {
+      max-width: 640px;
+    }
+    
+    @include mq(768px) {
+      max-width: 100%;
+      grid-template-columns: repeat(4, 150px);
+      gap: 2.5rem;
+      justify-content: center;
+    }
+  }
+
+  .navigation {
+    display: none;
+
+    @include mq(1600px) {
+      display: block;
+      grid-column: 3;
+      grid-row: 1 / -1;
+    }
+  }
+}
+
+.tabs {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  width: 100%;
+  background-color: var(--dark-800);
+
+  @include mq(600px) {
+    max-width: 375px;
+
+    @media (pointer: coarse) {
+      right: 0;
+      left: auto;
+    }
+
+    @media (pointer: fine) {
+      margin-bottom: 3rem;
+      left: 50%;
+      margin-left: -187.5px;
+    }
+  }
+
+  @include mq(1600px) {
+    top: 0;
+    left: 0;
+    right: auto;
+    width: auto;
+    margin-bottom: 0;
+    margin-left: auto;
+    background: transparent;
+  }
+}
+
+.tour-dates-link,
+.tour-dates-link .inner {
+  @include mq(1600px) {
+    flex-direction: row-reverse;
+  }
+}
+
+.songs-link {
+  @include mq(1600px) {
+    display: none;
+  }
+}
+
+.home-page-link {
+  position: fixed;
+  bottom: 0;
+  top: 0;
+  width: 1.75rem;
+  background-color: var(--dark-950);
+  border-top-left-radius: 0.75rem;
+
+  @include mq(1600px) {
+    width: 50%;
+    height: 100%;
+    bottom: auto;
+    background-color: transparent !important;
+    display: flex;
+    align-items: center;
+  }
+  
+  a {
+    width: 100%;
+    height: 100%;
+    align-items: flex-end;
+
+    @include mq(1600px) {
+      align-items: center;
+      justify-content: flex-start;
+    }
+  }
+
+  .text {
+    display: none;
+
+    @include mq(1600px) {
+      display: block;
+    }
+  }
+}

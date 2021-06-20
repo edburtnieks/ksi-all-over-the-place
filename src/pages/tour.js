@@ -9,8 +9,7 @@ import { TourPageContent } from "../components/TourPageContent"
 import { HomePageLink } from "../components/HomePageLink"
 import { Tabs } from "../components/Tabs"
 
-
-const HomePage = () => {
+const TourPage = () => {
   const matches = useMediaQuery('only screen and (max-width: 1599px) and (pointer: coarse)')
   let dragOptions = {}
 
@@ -19,8 +18,8 @@ const HomePage = () => {
       drag: "x",
       dragConstraints: { left: 0, right: 0 },
       onDragEnd: (event, info) => {
-        if (info.delta.x > 0) {
-          navigate('/tour')
+        if (info.delta.x < 0) {
+          navigate('/')
         }
       },
     }
@@ -29,20 +28,15 @@ const HomePage = () => {
   return (
     <>
       <Seo />
-      <div className="page-wrapper home-page-wrapper">
+      <div className="page-wrapper tour-page-wrapper">
         <BackgroundImages />
-        <TourPageContent aria-hidden="true" />
-        <HomePageContent {...dragOptions} />
-        <HomePageLink
-          initial={{ opacity: 0 }}
-          animate={{ backgroundColor: '#21222C', opacity: 0 }}
-          aria-hidden="true"
-          tabIndex="-1"
-        />
-        <Tabs animate={{ opacity: 1 }} />
+        <TourPageContent {...dragOptions} />
+        <HomePageContent animate={{ opacity: 0.6 }} tabIndex="-1" aria-hidden="true" />
+        <HomePageLink animate={{ backgroundColor: '#1B1B23', opacity: 1 }} />
+        <Tabs animate={{ opacity: 0 }} tabIndex="-1" aria-hidden="true" />
       </div>
     </>
   )
 }
 
-export default HomePage
+export default TourPage

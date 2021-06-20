@@ -1,0 +1,20 @@
+.song-link {
+  --spacing: 0.25rem;
+
+  display: flex;
+  flex-direction: column;
+  padding: 0.75rem 3rem;
+
+  &[data-disabled] {
+    color: var(--light-50-30);
+  }
+}
+
+.song-title {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.features {
+  font-size: 0.875rem;
+}

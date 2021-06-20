@@ -1,0 +1,17 @@
+@use "../mixins/media-query" as *;
+
+.music-service {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 44px;
+
+  svg {
+    width: 120px;
+    margin: 0 auto;
+
+    @include mq(768px) {
+      width: 150px;
+    }
+  }
+}

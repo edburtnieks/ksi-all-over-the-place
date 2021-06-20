@@ -1,0 +1,26 @@
+[
+  {
+    "id": "ksi-album-store",
+    "name": "KSI Album Store",
+    "logo": "ksiAlbumStore",
+    "link": "https://shopksi.com/"
+  },
+  {
+    "id": "spotify",
+    "name": "Spotify",
+    "logo": "spotify",
+    "link": "https://accounts.spotify.com/authorize?response_type=code&client_id=5a14783d79444ee9babd9176b256979e&scope=user-follow-modify+user-library-modify+playlist-modify-public+playlist-modify-private+user-read-email+user-read-private&redirect_uri=https%3A%2F%2Flnk.to%2F%7E%2Fprerelease%2Fspotify&state=bFVybD1Lc2kubG5rLnRvJTJGQWxsT3ZlclRoZVBsYWNlJnNJZD1mMGViOTY1NS1iMWRlLTQ5YTYtYjg4ZC03ZmU0YWUxMWFhNTUmdElkPWMwY2QxYjA1LTUzZTMtNGIyOS05YzlhLTNiOTYxYmEzOTNmMCZ1PWh0dHBzJTNBJTJGJTJGa3NpLmxuay50byUyRkFsbE92ZXJUaGVQbGFjZSZ2dD04M2VkY2NmMjE2ZGYyYmRlNWM0N2ZkOGZhMGQxMzVmNyZ2dT02MGM2NGI4Y2JiMDUxOC4xOTg5NzUwMQ%3D%3D"
+  },
+  {
+    "id": "apple",
+    "name": "Apple Music",
+    "logo": "apple",
+    "link": "https://music.apple.com/lv/album/1564190705?uo=4&app=music&at=1000lbgi&lId=22979594&cId=none&sr=3&src=Linkfire&itscg=30440&itsct=catchall_p3&ct=LFV_83edccf216df2bde5c47fd8fa0d135f7&ls=1"
+  },
+  {
+    "id": "deezer",
+    "name": "Deezer",
+    "logo": "deezer",
+    "link": "https://connect.deezer.com/oauth/auth.php?app_id=384124&perms=basic_access%2Cemail%2Cmanage_library%2Cmanage_community%2Coffline_access&redirect_uri=https%3A%2F%2Flnk.to%2F%7E%2Fprerelease%2Fdeezer&state=bFVybD1Lc2kubG5rLnRvJTJGQWxsT3ZlclRoZVBsYWNlJnNJZD1mYWU5NzZjMC1lYjQ2LTRiM2UtYjhhZC0wYmU5MWVhYzFkNzAmdElkPWMwY2QxYjA1LTUzZTMtNGIyOS05YzlhLTNiOTYxYmEzOTNmMCZ1PWh0dHBzJTNBJTJGJTJGa3NpLmxuay50byUyRkFsbE92ZXJUaGVQbGFjZSZ2dD04M2VkY2NmMjE2ZGYyYmRlNWM0N2ZkOGZhMGQxMzVmNyZ2dT02MGM2NGI4Y2JiMDUxOC4xOTg5NzUwMQ%3D%3D"
+  }
+]

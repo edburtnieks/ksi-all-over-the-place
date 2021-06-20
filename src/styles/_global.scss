@@ -1,0 +1,69 @@
+:root {
+  --dark-800: hsl(235, 14%, 15%);
+  --dark-800-95: hsl(235, 14%, 15%, 0.95);
+  --dark-900: hsl(230, 15%, 8%);
+  --dark-950: hsl(240, 13%, 12%);
+  --light-50: hsl(204, 20%, 95%);
+  --light-50-80: hsl(204, 20%, 95%, 0.8);
+  --light-50-30: hsl(204, 20%, 95%, 0.3);
+  --brand-600: hsl(345, 100%, 48%);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+p,
+ul {
+  margin: 0;
+}
+
+body {
+  font-family: "Work Sans";
+  letter-spacing: 0.5px;
+  line-height: 1.2;
+  color: var(--light-50);
+}
+
+body,
+#___gatsby {
+  overflow: hidden;
+}
+
+img,
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  display: inline-flex;
+
+  &:focus-visible {
+    outline: 0;
+
+    &.custom-focus {
+      .inner {
+        box-shadow: 0px 0px 0px 4px var(--brand-600);
+        border-radius: 8px;
+      }
+    }
+
+    &:not(.custom-focus) {
+      box-shadow: 0px 0px 0px 4px var(--brand-600);
+      border-radius: 8px;
+    }
+  }
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
