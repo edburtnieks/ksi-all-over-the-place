@@ -9,4 +9,4 @@ const Layout = ({ children }) => {
   )
 }
 
-export { Layout }
+export default Layout

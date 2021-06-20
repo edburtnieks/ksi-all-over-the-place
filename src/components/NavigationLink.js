@@ -21,7 +21,7 @@ const NavigationLink = ({ song }) => {
     if (!song.active) {
       setSongProps({ "data-disabled": true })
     }
-  }, [])
+  }, [song])
 
   return (
     <div
