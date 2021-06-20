@@ -1,54 +1,34 @@
 import * as React from "react"
 import { Link } from "gatsby"
+import { CaretLeft } from "phosphor-react"
 
-// styles
-const pageStyles = {
-  color: "#232129",
-  padding: "96px",
-  fontFamily: "-apple-system, Roboto, sans-serif, serif",
-}
-const headingStyles = {
-  marginTop: 0,
-  marginBottom: 64,
-  maxWidth: 320,
-}
+import { Seo } from "../components/Seo"
+import { BackgroundImages } from "../components/BackgroundImages"
 
-const paragraphStyles = {
-  marginBottom: 48,
-}
-const codeStyles = {
-  color: "#8A6534",
-  padding: 4,
-  backgroundColor: "#FFF4DB",
-  fontSize: "1.25rem",
-  borderRadius: 4,
-}
+import Logo from "../assets/all-over-the-place-logo.svg"
 
-// markup
 const NotFoundPage = () => {
   return (
-    <main style={pageStyles}>
-      <title>Not found</title>
-      <h1 style={headingStyles}>Page not found</h1>
-      <p style={paragraphStyles}>
-        Sorry{" "}
-        <span role="img" aria-label="Pensive emoji">
-          😔
-        </span>{" "}
-        we couldn’t find what you were looking for.
-        <br />
-        {process.env.NODE_ENV === "development" ? (
-          <>
-            <br />
-            Try creating a page in <code style={codeStyles}>src/pages/</code>.
-            <br />
-          </>
-        ) : null}
-        <br />
-        <Link to="/">Go home</Link>.
-      </p>
-    </main>
+    <>
+      <Seo />
+      <div className="not-found-page-wrapper">
+        <BackgroundImages />
+        <div className="album-logo">
+          <Link to="/">
+            <Logo />
+          </Link>
+        </div>
+        <main className="not-found-page-content flow">
+          <h1 className="text-brand-600">Page not Found</h1>
+          <Link to="/">
+            <CaretLeft size={24} weight="bold" aria-hidden="true" />
+            <span>Back to Home</span>
+          </Link>
+        </main>
+      </div>
+    </>
   )
 }
 
 export default NotFoundPage
+

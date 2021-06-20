@@ -9,7 +9,6 @@ import { TourPageContent } from "../components/TourPageContent"
 import { HomePageLink } from "../components/HomePageLink"
 import { Tabs } from "../components/Tabs"
 
-
 const HomePage = () => {
   const matches = useMediaQuery('only screen and (max-width: 1599px) and (pointer: coarse)')
   let dragOptions = {}
