@@ -5,7 +5,6 @@
   flex-basis: 100%;
   justify-content: center;
   align-items: center;
-  gap: 0.5rem;
   font-size: 0.875rem;
   letter-spacing: 1px;
 
@@ -25,7 +24,14 @@
 .inner {
   display: inline-flex;
   align-items: center;
-  gap: 0.5rem;
+}
+
+.text {
+  margin-left: 0.5rem;
+
+  @include mq(1600px) {
+    margin-right: 0.5rem;
+  }
 }
 
 .caret-icon {

@@ -8,7 +8,7 @@ const Tab = ({ leftIcon, rightIcon, children, link, className = "", ...rest }) =
     <Link to={link} className={`${className} ${tabStyles.tab} custom-focus text-light-50-80`} {...rest}>
       <span className={`${tabStyles.inner} inner`}>
         {leftIcon}
-        <span className="text">{children}</span>
+        <span className={`${tabStyles.text} text`}>{children}</span>
         {rightIcon}
       </span>
     </Link>

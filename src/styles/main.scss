@@ -260,7 +260,10 @@
 
   a {
     align-items: center;
-    gap: 1rem;
+
+    span {
+      margin-left: 0.5rem;
+    }
   }
 }
 
