@@ -1,4 +1,4 @@
-import * as React from "React"
+import * as React from "react"
 
 import { Layout } from "./src/components/Layout"
 import "./src/styles/main.scss"
