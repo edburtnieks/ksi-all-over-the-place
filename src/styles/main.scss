@@ -162,14 +162,14 @@
 
     direction: ltr;
     max-width: 992px;
-    margin: 1rem auto calc(1rem + env(safe-area-inset-bottom, 0));
-    padding: 0 1rem;
+    margin: 1rem auto;
+    padding: 0 1rem env(safe-area-inset-bottom, 0);
 
     @media (min-width: 776px) {
       --spacing: 5rem;
 
       max-width: 768px;
-      margin: 5rem auto calc(5rem + env(safe-area-inset-bottom, 0));
+      margin: 5rem auto;
     }
   }
 }
