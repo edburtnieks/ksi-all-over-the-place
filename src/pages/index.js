@@ -30,7 +30,7 @@ const HomePage = () => {
       <Seo />
       <div className="page-wrapper home-page-wrapper">
         <BackgroundImages />
-        <TourPageContent aria-hidden="true" />
+        <TourPageContent tabIndex="-1" aria-hidden="true" />
         <HomePageContent {...dragOptions} />
         <HomePageLink
           initial={{ opacity: 0 }}

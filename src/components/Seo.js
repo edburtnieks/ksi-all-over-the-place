@@ -20,7 +20,9 @@ const Seo = ({ lang, title }) => {
     <Helmet
       htmlAttributes={{ lang: seo.lang }}
       title={seo.title}
-    />
+    >
+      <meta name="theme-color" content="#21222C" />
+    </Helmet>
   )
 }
 

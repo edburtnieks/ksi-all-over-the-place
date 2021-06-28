@@ -41,3 +41,15 @@
     display: block;
   }
 }
+
+.house-icon {
+  @include mq(600px) {
+    width: 1.75rem;
+    height: 1.75rem;
+  }
+
+  @include mq(1600px) {
+    width: auto;
+    height: auto;
+  }
+}

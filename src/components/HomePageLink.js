@@ -16,11 +16,11 @@ const HomePageLink = ({ tabIndex, ...rest }) => {
     >
       <Tab
         link="/"
-        leftIcon={<House size={24} weight="bold" aria-hidden="true" />}
+        leftIcon={<House className={tabStyles.houseIcon} size={24} weight="bold" aria-hidden="true" />}
         rightIcon={<CaretRight size={16} weight="bold" className={tabStyles.caretIcon} aria-hidden="true" />}
         tabIndex={tabIndex}
       >
-        Home
+        Back Home
       </Tab>
     </motion.div>
   )
