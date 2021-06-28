@@ -98,7 +98,7 @@
   }
 
   .home-page-content {
-    right: calc(-100% + 1.75rem);
+    right: calc(-100% + 2.75rem);
     position: relative;
     user-select: none;
     pointer-events: none;
@@ -116,7 +116,7 @@
   }
 
   .tour-page-content {
-    width: calc(100% - 2.25rem);
+    width: calc(100% - 3.25rem);
 
     @include mq(600px) {
       width: calc(100% - 4.5rem);
@@ -348,7 +348,7 @@
   position: fixed;
   bottom: env(safe-area-inset-bottom, 0);
   top: 0;
-  width: 1.75rem;
+  width: 2.75rem;
   background-color: var(--dark-950);
   border-top-left-radius: 0.75rem;
 
