@@ -299,7 +299,7 @@
 .tabs {
   position: fixed;
   left: 0;
-  bottom: 0;
+  bottom: env(safe-area-inset-bottom, 0);
   display: flex;
   width: 100%;
   background-color: var(--dark-800);
