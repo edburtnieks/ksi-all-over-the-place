@@ -52,6 +52,7 @@
 
 .page-wrapper {
   background-color: var(--dark-900);
+  touch-action: none;
 
   @include mq(1600px) {
     background-color: transparent;
