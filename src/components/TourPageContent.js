@@ -17,7 +17,7 @@ const TourPageContent = ({ tabIndex, ...rest }) => {
         {eventsData.map((date) => {
           return (
             <li className="flow" key={date.id}>
-              <div>{date.text}</div>
+              <div className="month-year">{date.text}</div>
               <ul className="events flow">
                 {date.events.map((event) => {
                   return (

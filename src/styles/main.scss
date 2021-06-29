@@ -172,6 +172,14 @@
       margin: 5rem auto;
     }
   }
+
+  .month-year {
+    position: sticky;
+    top: env(safe-area-inset-top, 0);
+    padding: 0.25rem 0;
+    z-index: 1;
+    background-color: var(--dark-800);
+  }
 }
 
 .album-logo {
