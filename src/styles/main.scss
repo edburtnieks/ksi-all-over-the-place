@@ -291,9 +291,11 @@
     display: none;
 
     @include mq(1400px) {
-      display: block;
-      grid-column: 3;
-      grid-row: 1 / -1;
+      @media only screen and (min-height: 844px) {
+        display: block;
+        grid-column: 3;
+        grid-row: 1 / -1;
+      }
     }
   }
 }
