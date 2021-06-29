@@ -1,6 +1,6 @@
 import * as React from "react"
 import { motion } from "framer-motion"
-import { Calendar, CaretLeft, MusicNotesSimple } from "phosphor-react"
+import { Calendar, CaretLeft } from "phosphor-react"
 
 import { Tab } from "../components/Tab"
 
@@ -23,14 +23,6 @@ const Tabs = ({ tabIndex, ...rest }) => {
         tabIndex={tabIndex}
       >
         Tour Dates
-      </Tab>
-      <Tab
-        className="songs-link"
-        link="/"
-        leftIcon={<MusicNotesSimple size={24} weight="bold" aria-hidden="true" />}
-        tabIndex={tabIndex}
-      >
-        Songs
       </Tab>
     </motion.div>
   )

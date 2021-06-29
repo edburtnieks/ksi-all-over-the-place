@@ -337,12 +337,6 @@
   }
 }
 
-.songs-link {
-  @include mq(1600px) {
-    display: none;
-  }
-}
-
 .home-page-link {
   position: fixed;
   bottom: env(safe-area-inset-bottom, 0);
