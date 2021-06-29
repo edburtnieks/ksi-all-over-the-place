@@ -1,131 +1,191 @@
 [
   {
+    "id": "august-2021",
+    "text": "August, 2021",
+    "events": [
+      {
+        "id": "leeds-festival",
+        "link": "https://www.ticketmaster.co.uk/reading-and-leeds-festival/#leeds-tickets",
+        "day": "Fri",
+        "month": "Aug",
+        "date": "27",
+        "year": "2021",
+        "city": "Leeds, UK",
+        "place": "Bramham Park (Leeds Festival 2021)",
+        "isSoldOut": false,
+        "isFestival": true
+      },
+      {
+        "id": "reading-festival",
+        "link": "https://www.ticketmaster.co.uk/reading-and-leeds-festival/#reading-tickets",
+        "day": "Sun",
+        "month": "Aug",
+        "date": "29",
+        "year": "2021",
+        "city": "Reading, UK",
+        "place": "Reading (Reading Festival 2021)",
+        "isSoldOut": false,
+        "isFestival": true
+      }
+    ]
+  },
+  {
+    "id": "september-2021",
+    "text": "September, 2021",
+    "events": [
+      {
+        "id": "trnsmt-festival",
+        "link": "https://www.ticketmaster.co.uk/trnsmt",
+        "day": "Fri",
+        "month": "Sep",
+        "date": "10",
+        "year": "2021",
+        "city": "Glasgow, UK",
+        "place": "Glasgow Green Park (TRNSMT Festival 2021)",
+        "isSoldOut": false,
+        "isFestival": true
+      },
+      {
+        "id": "parklife-festival",
+        "link": "https://www.ticketmaster.co.uk/parklife",
+        "day": "Sat",
+        "month": "Sep",
+        "date": "11",
+        "year": "2021",
+        "city": "Manchester, UK",
+        "place": "Heaton Park (Parklife Festival 2021)",
+        "isSoldOut": true,
+        "isFestival": true
+      }
+    ]
+  },
+  {
     "id": "october-2021",
     "text": "October, 2021",
     "events": [
       {
         "id": "the-garage",
-        "link": "/",
+        "link": "https://www.ticketmaster.co.uk/ksi-glasgow-10-01-2021/event/360059359F62176C",
         "day": "Fri",
         "month": "Oct",
         "date": "01",
         "year": "2021",
         "city": "Glasgow, UK",
         "place": "The Garage",
-        "isSoldOut": false,
+        "isSoldOut": true,
         "isFestival": false
       },
       {
         "id": "riverside",
-        "link": "/",
+        "link": "https://www.ticketweb.uk/event/ksi-riverside-tickets/10722335",
         "day": "Sat",
         "month": "Oct",
         "date": "02",
         "year": "2021",
         "city": "Newcastle, UK",
         "place": "Riverside",
-        "isSoldOut": false,
+        "isSoldOut": true,
         "isFestival": false
       },
       {
         "id": "asylum",
-        "link": "/",
+        "link": "https://www.ticketweb.uk/event/ksi-asylum-hull-uni-union-tickets/10753265",
         "day": "Sun",
         "month": "Oct",
         "date": "03",
         "year": "2021",
         "city": "Hull, UK",
         "place": "Asylum",
-        "isSoldOut": false,
+        "isSoldOut": true,
         "isFestival": false
       },
       {
         "id": "o2-institute",
-        "link": "/",
+        "link": "https://www.ticketmaster.co.uk/ksi-birmingham-10-05-2021/event/1F005935BA5C2C93",
         "day": "Tue",
         "month": "Oct",
         "date": "05",
         "year": "2021",
         "city": "Birmingham, UK",
         "place": "O2 Institute",
-        "isSoldOut": false,
+        "isSoldOut": true,
         "isFestival": false
       },
       {
         "id": "old-fire-station",
-        "link": "/",
+        "link": "https://www.ticketmaster.co.uk/ksi-bournemouth-10-06-2021/event/1F00595AAED64088",
         "day": "Wed",
         "month": "Oct",
         "date": "06",
         "year": "2021",
         "city": "Bournemouth, UK",
         "place": "Old Fire Station",
-        "isSoldOut": false,
+        "isSoldOut": true,
         "isFestival": false
       },
       {
         "id": "swx",
-        "link": "/",
+        "link": "https://www.ticketmaster.co.uk/ksi-bristol-10-07-2021/event/1F005957986E2FE8",
         "day": "Thu",
         "month": "Oct",
         "date": "07",
         "year": "2021",
         "city": "Bristol, UK",
         "place": "SWX",
-        "isSoldOut": false,
+        "isSoldOut": true,
         "isFestival": false
       },
       {
         "id": "concorde-2",
-        "link": "/",
+        "link": "https://www.ticketweb.uk/event/ksi-concorde-2-tickets/10885605",
         "day": "Fri",
         "month": "Oct",
         "date": "08",
         "year": "2021",
         "city": "Brightton, UK",
         "place": "Concorde 2",
-        "isSoldOut": false,
+        "isSoldOut": true,
         "isFestival": false
       },
       {
         "id": "waterfront",
-        "link": "/",
+        "link": "https://www.ticketweb.uk/event/ksi-the-waterfront-tickets/10753135",
         "day": "Sun",
         "month": "Oct",
         "date": "10",
         "year": "2021",
         "city": "Norwich, UK",
         "place": "Waterfront",
-        "isSoldOut": false,
+        "isSoldOut": true,
         "isFestival": false
       },
       {
         "id": "cambridge-junction",
-        "link": "/",
+        "link": "https://www.ticketweb.uk/event/ksi-cambridge-junction-tickets/10753255",
         "day": "Mon",
         "month": "Oct",
         "date": "11",
         "year": "2021",
         "city": "Cambridge, UK",
         "place": "Cambridge Junction",
-        "isSoldOut": false,
+        "isSoldOut": true,
         "isFestival": false
       },
       {
         "id": "manchester-academy-2",
-        "link": "/",
+        "link": "https://www.ticketmaster.co.uk/ksi-manchester-10-12-2021/event/1F005935A8682719",
         "day": "Tue",
         "month": "Oct",
         "date": "12",
         "year": "2021",
         "city": "Manchester, UK",
         "place": "Manchester Academy 2",
-        "isSoldOut": false,
+        "isSoldOut": true,
         "isFestival": false
       },
       {
         "id": "o2-forum-kentish-town",
-        "link": "/",
+        "link": "https://www.ticketmaster.co.uk/ksi-london-10-13-2021/event/1F0059359E78254A",
         "day": "Wed",
         "month": "Oct",
         "date": "13",
@@ -137,7 +197,7 @@
       },
       {
         "id": "o2-academy-oxford",
-        "link": "/",
+        "link": "https://www.ticketmaster.co.uk/ksi-oxford-10-15-2021/event/1F005A64921C19C5",
         "day": "Fri",
         "month": "Oct",
         "date": "15",
@@ -149,19 +209,19 @@
       },
       {
         "id": "hangar-34",
-        "link": "/",
+        "link": "https://www.ticketweb.uk/event/ksi-hangar-34-tickets/10884475",
         "day": "Sat",
         "month": "Oct",
         "date": "16",
         "year": "2021",
         "city": "Liverpool, UK",
         "place": "Hangar 34",
-        "isSoldOut": false,
+        "isSoldOut": true,
         "isFestival": false
       },
       {
         "id": "the-academy",
-        "link": "/",
+        "link": "https://www.ticketmaster.ie/ksi-dublin-10-17-2021/event/18005A65A5390EF7",
         "day": "Sun",
         "month": "Oct",
         "date": "17",
@@ -179,7 +239,7 @@
     "events": [
       {
         "id": "sse-arena-wembley",
-        "link": "/",
+        "link": "https://www.axs.com/events/401150/ksi-tickets",
         "day": "Fri",
         "month": "Feb",
         "date": "25",
