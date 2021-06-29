@@ -25,16 +25,15 @@
     .ksi-profile,
     .all-over-the-place-cover {
       transform: rotateZ(-3deg);
-      background-size: cover;
-      background-repeat: no-repeat;
-    }
 
-    .ksi-profile {
-      background-image: url("../images/ksi-profile.jpg");
-    }
-
-    .all-over-the-place-cover {
-      background-image: url("../images/all-over-the-place-cover.jpg");
+      img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
     }
 
     &::after {
