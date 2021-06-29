@@ -9,6 +9,22 @@
 
 @use "components/event";
 
+.showcase-text {
+  position: fixed;
+  bottom: env(safe-area-inset-bottom, 0);
+  left: 0;
+  width: 100%;
+  padding: 0.5rem 1rem;
+  background-color: var(--dark-800);
+  color: var(--brand-600);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 1px;
+  white-space: nowrap;
+  z-index: 1;
+}
+
 .background-images {
   display: none;
 
@@ -145,8 +161,8 @@
 
 .tour-page-content {
   position: fixed;
-  bottom: env(safe-area-inset-bottom, 0);
-  height: 100%;
+  top: 0;
+  bottom: calc(1.875rem + env(safe-area-inset-bottom, 0));
   background-color: var(--dark-800);
   border-top-right-radius: 0.75rem;
   overflow: auto;
@@ -203,7 +219,7 @@
 
 .home-page-content {
   display: grid;
-  height: 100vh;
+  height: calc(100vh - 1.875rem);
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: auto 1fr;
   place-items: center;
@@ -280,7 +296,7 @@
   display: grid;
   grid-template-rows: auto 1fr;
   place-items: center;
-  height: 100vh;
+  height: calc(100vh - 1.875rem);
   background-color: var(--dark-800);
 
   @include mq(1400px) {
@@ -307,7 +323,7 @@
 .tabs {
   position: fixed;
   left: 0;
-  bottom: env(safe-area-inset-bottom, 0);
+  bottom: calc(1.875rem + env(safe-area-inset-bottom, 0));
   display: flex;
   width: 100%;
   background-color: var(--dark-800);
@@ -347,7 +363,7 @@
 
 .home-page-link {
   position: fixed;
-  bottom: env(safe-area-inset-bottom, 0);
+  bottom: calc(1.875rem + env(safe-area-inset-bottom, 0));
   top: 0;
   width: 2.75rem;
   background-color: var(--dark-950);

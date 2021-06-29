@@ -22,6 +22,7 @@ const Seo = ({ lang, title }) => {
       title={seo.title}
     >
       <meta name="theme-color" content="#21222C" />
+      <meta name="robots" content="noindex" />
     </Helmet>
   )
 }

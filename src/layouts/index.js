@@ -5,6 +5,7 @@ const Layout = ({ children }) => {
   return (
     <AnimateSharedLayout>
       {children}
+      <div className="showcase-text">For Demo and Showcase Purpose Only</div>
     </AnimateSharedLayout>
   )
 }
