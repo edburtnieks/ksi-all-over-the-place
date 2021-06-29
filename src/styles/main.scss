@@ -324,7 +324,7 @@
 .tabs {
   position: fixed;
   left: 0;
-  bottom: calc(1.875rem + env(safe-area-inset-bottom, 0));
+  bottom: 0;
   display: flex;
   width: 100%;
   
@@ -345,6 +345,7 @@
   }
 
   @include mq(1400px) {
+    bottom: calc(1.875rem + env(safe-area-inset-bottom, 0));
     top: 0;
     left: 0;
     right: auto;
