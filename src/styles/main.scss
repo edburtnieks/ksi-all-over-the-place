@@ -23,6 +23,10 @@
   letter-spacing: 1px;
   white-space: nowrap;
   z-index: 1;
+
+  @include mq(1400px) {
+    background-color: transparent;
+  }
 }
 
 .background-images {
