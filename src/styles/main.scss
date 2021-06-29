@@ -12,7 +12,7 @@
 .background-images {
   display: none;
 
-  @include mq(1600px) {
+  @include mq(1400px) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     position: fixed;
@@ -53,7 +53,7 @@
   background-color: var(--dark-900);
   touch-action: none;
 
-  @include mq(1600px) {
+  @include mq(1400px) {
     background-color: transparent;
 
     &::before {
@@ -74,7 +74,7 @@
     left: calc(-100% + 1.75rem);
     width: calc(100% - 2.25rem);
 
-    @include mq(1600px) {
+    @include mq(1400px) {
       left: -60%;
       width: calc(60% - 3rem);
     }
@@ -83,7 +83,7 @@
   .home-page-link {
     right: 100%;
 
-    @include mq(1600px) {
+    @include mq(1400px) {
       pointer-events: none;
       right: 60%;
     }
@@ -109,7 +109,7 @@
       right: calc(-100% + 3.5rem);
     }
 
-    @include mq(1600px) {
+    @include mq(1400px) {
       right: -60%;
     }
   }
@@ -121,7 +121,7 @@
       width: calc(100% - 4.5rem);
     }
     
-    @include mq(1600px) {
+    @include mq(1400px) {
       width: calc(60% - 3rem);
     }
   }
@@ -136,7 +136,7 @@
     right: -100%;
     left: auto;
 
-    @include mq(1600px) {
+    @include mq(1400px) {
       right: auto;
       left: 60%;
     }
@@ -152,7 +152,7 @@
   overflow: auto;
   direction: rtl;
 
-  @include mq(1600px) {
+  @include mq(1400px) {
     background-color: transparent;
     border-top-right-radius: 0;
   }
@@ -215,7 +215,7 @@
     }
   }
 
-  @include mq(1600px) {
+  @include mq(1400px) {
     background-color: transparent;
     grid-template-columns: auto 1fr auto;
   }
@@ -268,7 +268,7 @@
   .navigation {
     display: none;
 
-    @include mq(1600px) {
+    @include mq(1400px) {
       display: block;
       grid-column: 3;
       grid-row: 1 / -1;
@@ -283,7 +283,7 @@
   height: 100vh;
   background-color: var(--dark-800);
 
-  @include mq(1600px) {
+  @include mq(1400px) {
     background-color: transparent;
   }
 }
@@ -327,7 +327,7 @@
     }
   }
 
-  @include mq(1600px) {
+  @include mq(1400px) {
     top: 0;
     left: 0;
     right: auto;
@@ -340,7 +340,7 @@
 
 .tour-dates-link,
 .tour-dates-link .inner {
-  @include mq(1600px) {
+  @include mq(1400px) {
     flex-direction: row-reverse;
   }
 }
@@ -357,7 +357,7 @@
     width: 3.5rem;
   }
 
-  @include mq(1600px) {
+  @include mq(1400px) {
     width: 40%;
     height: 100%;
     bottom: auto;
@@ -371,7 +371,7 @@
     height: 100%;
     align-items: flex-end;
 
-    @include mq(1600px) {
+    @include mq(1400px) {
       align-items: center;
       justify-content: flex-start;
     }
@@ -380,7 +380,7 @@
   .text {
     display: none;
 
-    @include mq(1600px) {
+    @include mq(1400px) {
       display: block;
     }
   }

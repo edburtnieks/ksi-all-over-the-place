@@ -16,7 +16,7 @@
     }
   }
 
-  @include mq(1600px) {
+  @include mq(1400px) {
     padding: 1rem 3rem;
   }
 }
@@ -29,7 +29,7 @@
 .text {
   margin-left: 0.5rem;
 
-  @include mq(1600px) {
+  @include mq(1400px) {
     margin-right: 0.5rem;
   }
 }
@@ -37,7 +37,7 @@
 .caret-icon {
   display: none;
 
-  @include mq(1600px) {
+  @include mq(1400px) {
     display: block;
   }
 }
@@ -48,7 +48,7 @@
     height: 1.75rem;
   }
 
-  @include mq(1600px) {
+  @include mq(1400px) {
     width: auto;
     height: auto;
   }
