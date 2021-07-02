@@ -26,7 +26,7 @@ const TourPage = () => {
 
   return (
     <>
-      <Seo />
+      <Seo title="Tour" />
       <div className="page-wrapper tour-page-wrapper" { ...matches && {...dragOptions()}}>
         <BackgroundImages />
         <TourPageContent />

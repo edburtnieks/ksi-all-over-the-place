@@ -13,7 +13,7 @@ const Seo = ({ lang, title }) => {
 
   const seo = {
     lang: lang || defaultLang,
-    title: title || defaultTitle,
+    title: `${title} | ${defaultTitle}`,
   }
 
   return (

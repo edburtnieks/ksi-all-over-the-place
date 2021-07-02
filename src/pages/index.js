@@ -26,7 +26,7 @@ const HomePage = () => {
 
   return (
     <>
-      <Seo />
+      <Seo title="Home" />
       <div className="page-wrapper home-page-wrapper" { ...matches && {...dragOptions()}}>
         <BackgroundImages />
         <TourPageContent tabIndex="-1" aria-hidden="true" />
