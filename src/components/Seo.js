@@ -23,6 +23,14 @@ const Seo = ({ lang, title }) => {
     >
       <meta name="theme-color" content="#21222C" />
       <meta name="robots" content="noindex" />
+      <meta name="description" content={`"KSI - All Over the Place" album showcase concept demo`} />
+      <link rel="canonical" href="https://aotp.netlify.app/" />
+      <meta property="og:title" content="KSI - All Over the Place" />
+      <meta property="og:description" content={`"KSI - All Over the Place" album showcase concept demo`} />
+      <meta property="og:url" content="https://aotp.netlify.app/" />
+      <meta property="og:type" content="website" />
+      <meta property="og:site_name" content="KSIAllOverThePlace" />
+      <meta property="og:image" content="/og-image.jpg" />
     </Helmet>
   )
 }
